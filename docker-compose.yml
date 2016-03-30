@@ -1,37 +1,17 @@
-version: '2'
-
-services:
-
  mysql:
-
   image: mysql
-
   container_name: mysql
-
   ports:
-
    - "3306"
-
   environment:
-
    - MYSQL_ROOT_PASSWORD=root
-
    - MYSQL_DATABASE=ghost
-
    - MYSQL_USER=ghost
-
    - MYSQL_PASSWORD=password
-
  ghost:
-
-  build: ./myghost
-
+  build: ./
   container_name: ghost
-
-  depends_on:
-
-    - mysql
-
+  links:
+   - mysql
   ports:
-
     - "80:2368"
