@@ -5,4 +5,7 @@ Running through the Docker Compose tutorial on http://www.linux.com/learn/tutori
 Useful pages
 
 https://docs.docker.com/v1.5/compose/yml/
+
 https://docs.docker.com/v1.5/compose/
+
+https://hub.docker.com/r/confirm/mysql-backup/
